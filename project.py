@@ -286,10 +286,6 @@ for percent in percentages_to_test:
         saved_newton_data_for_nn = newton_random_filled_df
 
 # =====================================================================
-# NEURAL NETWORK SECTION (WITH WEATHER DATA)
-# =====================================================================
-
-# =====================================================================
 # NEURAL NETWORK SECTION
 # Works with multi-ZIP time-series dataset
 # =====================================================================
