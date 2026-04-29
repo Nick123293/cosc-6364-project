@@ -326,11 +326,7 @@ def local_newton_interpolate_by_zip(df, feature, degree=3):
     return filled_series.reindex(df.index)
 
 
-# =====================================================================
-# Interpolation Method Registry
-# =====================================================================
-
-INTERPOLATION_METHODS = [
+INTERPOLATION_METHODS = [ #Used to tell fill_feature_with_method how to call the method (also used for logging)
     {
         "name": "average_by_zip",
         "type": "average",
@@ -426,7 +422,7 @@ def fill_feature_with_method(df, feature, method_spec): #Chooses which interpola
     raise ValueError(f"Unknown interpolation method type: {method_type}")
 
 
-def run_all_interpolation_methods(
+def run_all_interpolation_methods( #Creates interpolated dataframe from the data copies with missing values
     test_data,
     real_values,
     hole_indexes,
@@ -434,13 +430,6 @@ def run_all_interpolation_methods(
     missing_percent,
     num_missing_timesteps,
 ):
-    """
-    Runs all interpolation methods.
-
-    Returns:
-        filled_datasets:
-            dict mapping method_name -> fully interpolated dataframe
-    """
     print("\n" + "=" * 70)
     print(
         f"RUNNING INTERPOLATION: "
@@ -503,16 +492,7 @@ def run_all_interpolation_methods(
     return filled_datasets
 
 
-# =====================================================================
-# Missing Data Creation
-# =====================================================================
-
-def create_random_timestep_holes(clean_df, percent):
-    """
-    Randomly select a percent of global timesteps and remove all interpolation
-    features for every ZIP code at those timesteps.
-    """
-
+def create_random_timestep_holes(clean_df, percent): #Removes random timesteps from data
     test_data = clean_df.copy()
 
     unique_timesteps = clean_df["time"].drop_duplicates().to_numpy()
@@ -536,16 +516,7 @@ def create_random_timestep_holes(clean_df, percent):
     return test_data, real_values, row_indexes, len(random_timesteps)
 
 
-def create_block_timestep_holes(clean_df, percent, block_size):
-    """
-    Select random contiguous timestep blocks and remove all interpolation
-    features for every ZIP code at those timesteps.
-
-    Note:
-        Blocks may overlap, so actual missing percent can be slightly lower
-        than requested.
-    """
-
+def create_block_timestep_holes(clean_df, percent, block_size): #Removes blocks from data to see what happens if we have large chunks removed
     test_data = clean_df.copy()
 
     unique_timesteps = clean_df["time"].drop_duplicates().to_numpy()
@@ -584,29 +555,13 @@ def create_block_timestep_holes(clean_df, percent, block_size):
 
     return test_data, real_values, row_indexes, len(block_timesteps)
 
-
-# =====================================================================
-# Neural Network Helpers
-# =====================================================================
-
-def train_test_split_time_windows_by_zip(
+def train_test_split_time_windows_by_zip( #Split train and test data by zip so we dont leak future data
     df,
     features,
     target_col,
     window_size,
     train_fraction=0.8,
 ):
-    """
-    Splits each ZIP code's time series into train/test first,
-    then creates windows separately.
-
-    X shape:
-        (num_windows, window_size, num_features)
-
-    y shape:
-        (num_windows,)
-    """
-
     X_train_all = []
     y_train_all = []
     X_test_all = []
@@ -786,11 +741,6 @@ train_and_evaluate_nn(
     prediction_target=target_col,
 )
 
-
-# =====================================================================
-# Main Experiment Loop
-# =====================================================================
-
 all_filled_datasets = {}
 
 for percent in percentages_to_test:
@@ -798,11 +748,6 @@ for percent in percentages_to_test:
         f"\n\n********** STARTING TEST FOR "
         f"{int(percent * 100)}% MISSING DATA **********"
     )
-
-    # -----------------------------------------------------------------
-    # Random timestep holes
-    # -----------------------------------------------------------------
-
     (
         test_data_random_holes,
         real_values_random,
@@ -832,11 +777,6 @@ for percent in percentages_to_test:
             num_missing_rows=len(random_row_indexes),
             prediction_target=target_col,
         )
-
-    # -----------------------------------------------------------------
-    # Block timestep holes
-    # -----------------------------------------------------------------
-
     (
         test_data_block_holes,
         real_values_blocks,
