@@ -1,6 +1,8 @@
 import os
 # Suppress TensorFlow INFO/WARNING startup logs
-os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
+#Disable GPU since we are using tiny LSTM
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 # Disable oneDNN optimizations for more reproducible CPU results
 os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
 
@@ -32,7 +34,7 @@ log_file_path = "experiment_log.csv"
 
 percentages_to_test = [0.10, 0.20] #percentages of removal for interpolation
 
-block_size = 8 #Block size for removing blocks for interpolation
+block_size = 24 #Block size for removing blocks for interpolation
 
 target_col = "us_aqi"
 
@@ -50,9 +52,7 @@ interpolation_features = [
     "aerosol_optical_depth",
 ]
 
-nn_features = interpolation_features + ["latitude", "longitude"]# latitude and longitude are kept because they can help the NN learn location-specific behavior.
-
-PREDICTION_TARGETS = ["us_aqi"] #Currently just one prediction target, this is here so we can change to multiple if we'd like
+nn_features = interpolation_features + ["latitude", "longitude"]#latitude and longitude are input to NN because they can help the NN learn location-specific behavior.
 
 window_size = 24
 train_fraction = 0.8
@@ -60,6 +60,8 @@ num_training_rounds = 3
 
 
 clean_control_data = pd.read_csv(dataset_file_path) #our dataset requires no cleaning, so we can just read the csv as clean
+clean_control_data["time"] = pd.to_datetime(clean_control_data["time"]) #converts times from string for sorting
+clean_control_data = clean_control_data.sort_values(["zip", "time"]).reset_index(drop=True) #sort data (in our case it already is sorted as far as I know, but its useful to do it just in case)
 
 log_file_path = "experiment_log.json" #Log file path, change to whatever you'd like
 
@@ -71,13 +73,6 @@ experiment_log = {
 }
 
 
-def percent_key(missing_percent):
-    """
-    Converts 0.1 to '0.10' so JSON keys are consistent.
-    """
-    return f"{missing_percent:.2f}"
-
-
 def ensure_method_pattern_percent(method, missing_pattern, missing_percent):
     """
     Ensures the nested JSON structure exists:
@@ -87,7 +82,7 @@ def ensure_method_pattern_percent(method, missing_pattern, missing_percent):
             -> missing_pattern
                 -> missing_percent
     """
-    p_key = percent_key(missing_percent)
+    p_key = f"{missing_percent:.2f}"
 
     experiment_log["interpolation_methods"].setdefault(method, {})
     experiment_log["interpolation_methods"][method].setdefault(missing_pattern, {})
@@ -179,7 +174,6 @@ def finite_rmse(real_values, guessed_values):
     Computes RMSE while ignoring non-finite values.
     This protects logging from NaN/inf predictions during unstable interpolation.
     """
-
     real_values = np.asarray(real_values, dtype=float).flatten()
     guessed_values = np.asarray(guessed_values, dtype=float).flatten()
 
@@ -353,37 +347,60 @@ INTERPOLATION_METHODS = [
         "method": "spline",
         "kwargs": {"order": 2},
     },
-    # {
-    #     "name": "spline_3_by_zip",
-    #     "type": "pandas_interpolate",
-    #     "method": "spline",
-    #     "kwargs": {"order": 3},
-    # },
-    # {
-    #     "name": "spline_4_by_zip",
-    #     "type": "pandas_interpolate",
-    #     "method": "spline",
-    #     "kwargs": {"order": 4},
-    # },
-    # {
-    #     "name": "spline_5_by_zip",
-    #     "type": "pandas_interpolate",
-    #     "method": "spline",
-    #     "kwargs": {"order": 5},
-    # },
+    {
+        "name": "spline_3_by_zip",
+        "type": "pandas_interpolate",
+        "method": "spline",
+        "kwargs": {"order": 3},
+    },
+    {
+        "name": "spline_4_by_zip",
+        "type": "pandas_interpolate",
+        "method": "spline",
+        "kwargs": {"order": 4},
+    },
+    {
+        "name": "pchip_by_zip",
+        "type": "pandas_interpolate",
+        "method": "pchip",
+        "kwargs": {},
+    },
+    {
+        "name": "akima_by_zip",
+        "type": "pandas_interpolate",
+        "method": "akima",
+        "kwargs": {},
+    },
+    {
+        "name": "linear_by_zip",
+        "type": "pandas_interpolate",
+        "method": "linear",
+        "kwargs": {},
+    },
+    {
+        "name": "local_newton_degree_2_by_zip",
+        "type": "local_newton",
+        "degree": 2,
+    },
     {
         "name": "local_newton_degree_3_by_zip",
         "type": "local_newton",
         "degree": 3,
     },
+    {
+        "name": "local_newton_degree_4_by_zip",
+        "type": "local_newton",
+        "degree": 4,
+    },
+    {
+        "name": "local_newton_degree_10_by_zip",
+        "type": "local_newton",
+        "degree": 10,
+    },
 ]
 
 
-def fill_feature_with_method(df, feature, method_spec):
-    """
-    Fill one feature using one interpolation method.
-    """
-
+def fill_feature_with_method(df, feature, method_spec): #Chooses which interpolation function to call based on INTERPOLATION_METHODS
     method_type = method_spec["type"]
 
     if method_type == "average":
@@ -397,13 +414,14 @@ def fill_feature_with_method(df, feature, method_spec):
             fill_edges=True,
             **method_spec.get("kwargs", {}),
         )
-
+    
     if method_type == "local_newton":
         return local_newton_interpolate_by_zip(
             df,
             feature,
             degree=method_spec["degree"],
         )
+        
 
     raise ValueError(f"Unknown interpolation method type: {method_type}")
 
@@ -423,7 +441,6 @@ def run_all_interpolation_methods(
         filled_datasets:
             dict mapping method_name -> fully interpolated dataframe
     """
-
     print("\n" + "=" * 70)
     print(
         f"RUNNING INTERPOLATION: "
@@ -649,7 +666,7 @@ def build_convlstm_model(window_size, num_features):
     return model
 
 
-def train_and_evaluate_nn(
+def train_and_evaluate_nn( #Trains based on one interpolation method
     df,
     method_name,
     missing_pattern,
@@ -658,11 +675,6 @@ def train_and_evaluate_nn(
     num_missing_rows,
     prediction_target,
 ):
-    """
-    Trains and evaluates Conv1D + LSTM on one dataframe and one prediction target.
-    Logs prediction RMSE.
-    """
-
     if prediction_target not in nn_features:
         raise ValueError(
             f"Prediction target '{prediction_target}' must be in nn_features."
@@ -759,11 +771,6 @@ def train_and_evaluate_nn(
     )
 
     return prediction_rmse
-
-
-# =====================================================================
-# Baseline Neural Network on Clean Dataset
-# =====================================================================
 
 print("\n" + "=" * 70)
 print("TRAINING BASELINE NN ON CLEAN DATASET")
@@ -863,8 +870,5 @@ for percent in percentages_to_test:
             num_missing_rows=len(block_row_indexes),
             prediction_target=target_col,
         )
-
-
 save_log()
-
 print("\nExperiment complete.")

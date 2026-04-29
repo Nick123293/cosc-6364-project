@@ -1,0 +1,3732 @@
+{
+    "baseline": {
+        "prediction_rmse": {
+            "us_aqi": {
+                "value": 1.5031251596930106,
+                "runtime_seconds": 50.272210359573364
+            }
+        }
+    },
+    "interpolation_methods": {
+        "average_by_zip": {
+            "random_timesteps": {
+                "0.10": {
+                    "_metadata": {
+                        "num_missing_timesteps": 98,
+                        "num_missing_rows": 9506
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 10.687936605206184,
+                            "runtime_seconds": 0.021736621856689453
+                        },
+                        "prediction_rmse": {
+                            "value": 5.2240071600364635,
+                            "runtime_seconds": 55.462899684906006
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 4.06358116707964,
+                            "runtime_seconds": 0.017881393432617188
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 3.72536529784405,
+                            "runtime_seconds": 0.017724275588989258
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 43.74841748053922,
+                            "runtime_seconds": 0.01769399642944336
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 9.295479763329322,
+                            "runtime_seconds": 0.01695418357849121
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 1.2962031337684734,
+                            "runtime_seconds": 0.019051551818847656
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 24.786776797973463,
+                            "runtime_seconds": 0.025656938552856445
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 2.607371575364084,
+                            "runtime_seconds": 0.01886439323425293
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 2.303342816940483,
+                            "runtime_seconds": 0.020426511764526367
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.73645813817836,
+                            "runtime_seconds": 0.019379377365112305
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.10891489691887615,
+                            "runtime_seconds": 0.017846345901489258
+                        }
+                    }
+                },
+                "0.20": {
+                    "_metadata": {
+                        "num_missing_timesteps": 196,
+                        "num_missing_rows": 19012
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 11.016030039015392,
+                            "runtime_seconds": 0.0198366641998291
+                        },
+                        "prediction_rmse": {
+                            "value": 6.156131914477315,
+                            "runtime_seconds": 55.002580881118774
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 5.007419553839771,
+                            "runtime_seconds": 0.018390893936157227
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 4.833344720115125,
+                            "runtime_seconds": 0.0184476375579834
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 58.55425774680515,
+                            "runtime_seconds": 0.018167972564697266
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 10.786806663704258,
+                            "runtime_seconds": 0.018074512481689453
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 1.4345748582056852,
+                            "runtime_seconds": 0.01870894432067871
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 23.550638013634487,
+                            "runtime_seconds": 0.01941847801208496
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 2.6640463461840915,
+                            "runtime_seconds": 0.018753528594970703
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 2.2405589262410777,
+                            "runtime_seconds": 0.018010854721069336
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.6830693532762453,
+                            "runtime_seconds": 0.01865863800048828
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.09775229294741852,
+                            "runtime_seconds": 0.019979238510131836
+                        }
+                    }
+                }
+            },
+            "block_timesteps_24": {
+                "0.10": {
+                    "_metadata": {
+                        "num_missing_timesteps": 75,
+                        "num_missing_rows": 7275
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 12.628594093602882,
+                            "runtime_seconds": 0.01942300796508789
+                        },
+                        "prediction_rmse": {
+                            "value": 1.7530817007090067,
+                            "runtime_seconds": 51.81087589263916
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 9.380231141182863,
+                            "runtime_seconds": 0.01727294921875
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 9.324293545437248,
+                            "runtime_seconds": 0.016919612884521484
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 121.03374605186804,
+                            "runtime_seconds": 0.01990365982055664
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 24.758852772144373,
+                            "runtime_seconds": 0.01968240737915039
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 2.0950061849538195,
+                            "runtime_seconds": 0.01904749870300293
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 42.56583008518728,
+                            "runtime_seconds": 0.01848006248474121
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 2.48111649320067,
+                            "runtime_seconds": 0.019778013229370117
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 2.0447023568176297,
+                            "runtime_seconds": 0.01750326156616211
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.7816980561083569,
+                            "runtime_seconds": 0.016947269439697266
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.15519188147496055,
+                            "runtime_seconds": 0.017505407333374023
+                        }
+                    }
+                },
+                "0.20": {
+                    "_metadata": {
+                        "num_missing_timesteps": 165,
+                        "num_missing_rows": 16005
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 9.034219719607707,
+                            "runtime_seconds": 0.029551982879638672
+                        },
+                        "prediction_rmse": {
+                            "value": 1.7925046329881968,
+                            "runtime_seconds": 54.00592088699341
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 3.1802816975156145,
+                            "runtime_seconds": 0.017078876495361328
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 2.8113902589395114,
+                            "runtime_seconds": 0.017452001571655273
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 37.30047076539128,
+                            "runtime_seconds": 0.018270254135131836
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 7.940029131747169,
+                            "runtime_seconds": 0.018684864044189453
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 1.064579691342821,
+                            "runtime_seconds": 0.017981767654418945
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 23.306945783178534,
+                            "runtime_seconds": 0.01776719093322754
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 2.864739631208528,
+                            "runtime_seconds": 0.017448902130126953
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 2.218995958136625,
+                            "runtime_seconds": 0.01750946044921875
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.6232453678694572,
+                            "runtime_seconds": 0.018008947372436523
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.11819558805684079,
+                            "runtime_seconds": 0.018247365951538086
+                        }
+                    }
+                }
+            }
+        },
+        "nearest_by_zip": {
+            "random_timesteps": {
+                "0.10": {
+                    "_metadata": {
+                        "num_missing_timesteps": 98,
+                        "num_missing_rows": 9506
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 2.1175609898983745,
+                            "runtime_seconds": 0.0823814868927002
+                        },
+                        "prediction_rmse": {
+                            "value": 1.9245519355730203,
+                            "runtime_seconds": 52.60142254829407
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 1.3809286812585548,
+                            "runtime_seconds": 0.08009195327758789
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 1.1412981819314134,
+                            "runtime_seconds": 0.07901287078857422
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 15.442811706761097,
+                            "runtime_seconds": 0.07871627807617188
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 2.8764922855301553,
+                            "runtime_seconds": 0.07558321952819824
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 0.32364072674559324,
+                            "runtime_seconds": 0.08100128173828125
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 6.609903694170014,
+                            "runtime_seconds": 0.10838699340820312
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 1.1915810288021274,
+                            "runtime_seconds": 0.10008692741394043
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 1.072483525797721,
+                            "runtime_seconds": 0.08950328826904297
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.3197674307403045,
+                            "runtime_seconds": 0.09730672836303711
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.01967493030203842,
+                            "runtime_seconds": 0.0802311897277832
+                        }
+                    }
+                },
+                "0.20": {
+                    "_metadata": {
+                        "num_missing_timesteps": 196,
+                        "num_missing_rows": 19012
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 2.030367510685553,
+                            "runtime_seconds": 0.09220433235168457
+                        },
+                        "prediction_rmse": {
+                            "value": 1.8367458736963225,
+                            "runtime_seconds": 54.73533606529236
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 1.619943296677981,
+                            "runtime_seconds": 0.0798807144165039
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 1.4755638090564218,
+                            "runtime_seconds": 0.08037304878234863
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 18.147338632205486,
+                            "runtime_seconds": 0.08004546165466309
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 3.4650667173020655,
+                            "runtime_seconds": 0.08165121078491211
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 0.3128044487940615,
+                            "runtime_seconds": 0.08601617813110352
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 6.743532173345316,
+                            "runtime_seconds": 0.08806896209716797
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 1.0290403146000477,
+                            "runtime_seconds": 0.08846282958984375
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 0.896966464019847,
+                            "runtime_seconds": 0.0793142318725586
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.3303658499031684,
+                            "runtime_seconds": 0.08007335662841797
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.024559875010904085,
+                            "runtime_seconds": 0.08040928840637207
+                        }
+                    }
+                }
+            },
+            "block_timesteps_24": {
+                "0.10": {
+                    "_metadata": {
+                        "num_missing_timesteps": 75,
+                        "num_missing_rows": 7275
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 7.710389600633222,
+                            "runtime_seconds": 0.08409428596496582
+                        },
+                        "prediction_rmse": {
+                            "value": 1.6884972502791902,
+                            "runtime_seconds": 54.03205227851868
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 7.878304194174341,
+                            "runtime_seconds": 0.07535457611083984
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 7.230458389503169,
+                            "runtime_seconds": 0.07463455200195312
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 105.35448197799766,
+                            "runtime_seconds": 0.08377742767333984
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 25.987813638933897,
+                            "runtime_seconds": 0.08594369888305664
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 1.817390221304947,
+                            "runtime_seconds": 0.07615828514099121
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 55.978057802378785,
+                            "runtime_seconds": 0.07518124580383301
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 3.8095006482481977,
+                            "runtime_seconds": 0.07914280891418457
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 3.0866226162681003,
+                            "runtime_seconds": 0.07846570014953613
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.8797062927545918,
+                            "runtime_seconds": 0.07467389106750488
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.13390235966702985,
+                            "runtime_seconds": 0.07759666442871094
+                        }
+                    }
+                },
+                "0.20": {
+                    "_metadata": {
+                        "num_missing_timesteps": 165,
+                        "num_missing_rows": 16005
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 8.045259888525736,
+                            "runtime_seconds": 0.09205341339111328
+                        },
+                        "prediction_rmse": {
+                            "value": 2.2188911004097998,
+                            "runtime_seconds": 49.39797258377075
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 2.773693196018981,
+                            "runtime_seconds": 0.07640743255615234
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 2.426528767997229,
+                            "runtime_seconds": 0.0778346061706543
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 32.24089176078682,
+                            "runtime_seconds": 0.07611203193664551
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 11.845264820031243,
+                            "runtime_seconds": 0.0782475471496582
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 1.0165318893973885,
+                            "runtime_seconds": 0.07800841331481934
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 28.870476353421623,
+                            "runtime_seconds": 0.07636284828186035
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 4.025416652378001,
+                            "runtime_seconds": 0.07995462417602539
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 3.004635489829281,
+                            "runtime_seconds": 0.0785226821899414
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.4486781585634449,
+                            "runtime_seconds": 0.07955288887023926
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.07051703550318499,
+                            "runtime_seconds": 0.08203268051147461
+                        }
+                    }
+                }
+            }
+        },
+        "spline_2_by_zip": {
+            "random_timesteps": {
+                "0.10": {
+                    "_metadata": {
+                        "num_missing_timesteps": 98,
+                        "num_missing_rows": 9506
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 1.2127360737423016,
+                            "runtime_seconds": 0.33555054664611816
+                        },
+                        "prediction_rmse": {
+                            "value": 1.725148921383108,
+                            "runtime_seconds": 51.479408979415894
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 1.2378421291460464,
+                            "runtime_seconds": 0.27458667755126953
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 1.2426480173419108,
+                            "runtime_seconds": 0.2935965061187744
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 3.7195898824352014,
+                            "runtime_seconds": 1.462322473526001
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 1.5463666708401593,
+                            "runtime_seconds": 0.611194372177124
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 1.0539340165462774,
+                            "runtime_seconds": 0.1326453685760498
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 2.2568956446650894,
+                            "runtime_seconds": 1.1529428958892822
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 1.274284966168994,
+                            "runtime_seconds": 0.3951241970062256
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 1.201729276342459,
+                            "runtime_seconds": 0.30948424339294434
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.7356552188365997,
+                            "runtime_seconds": 0.1004035472869873
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.10851647381371901,
+                            "runtime_seconds": 0.0822901725769043
+                        }
+                    }
+                },
+                "0.20": {
+                    "_metadata": {
+                        "num_missing_timesteps": 196,
+                        "num_missing_rows": 19012
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 1.3963969666009983,
+                            "runtime_seconds": 0.33876752853393555
+                        },
+                        "prediction_rmse": {
+                            "value": 1.9589004242450512,
+                            "runtime_seconds": 52.41691446304321
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 1.4145676091900639,
+                            "runtime_seconds": 0.2582714557647705
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 1.3143844989307565,
+                            "runtime_seconds": 0.22782564163208008
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 3.977303636195704,
+                            "runtime_seconds": 1.504828691482544
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 1.5069190106592083,
+                            "runtime_seconds": 0.5297195911407471
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 1.00453554362873,
+                            "runtime_seconds": 0.13394665718078613
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 2.1866224899386606,
+                            "runtime_seconds": 0.9694640636444092
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 1.2973454114202883,
+                            "runtime_seconds": 0.31687045097351074
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 1.308871580014421,
+                            "runtime_seconds": 0.27178502082824707
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.6852008582980942,
+                            "runtime_seconds": 0.0845038890838623
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.09648307450487505,
+                            "runtime_seconds": 0.10004186630249023
+                        }
+                    }
+                }
+            },
+            "block_timesteps_24": {
+                "0.10": {
+                    "_metadata": {
+                        "num_missing_timesteps": 75,
+                        "num_missing_rows": 7275
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 5.736579147401156,
+                            "runtime_seconds": 0.33122968673706055
+                        },
+                        "prediction_rmse": {
+                            "value": 1.4825055248111474,
+                            "runtime_seconds": 54.533876180648804
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 8.50931320628935,
+                            "runtime_seconds": 0.25137877464294434
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 8.232107936254101,
+                            "runtime_seconds": 0.23108363151550293
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 144.74233737571853,
+                            "runtime_seconds": 1.4004590511322021
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 32.944493902450866,
+                            "runtime_seconds": 0.445223331451416
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 2.4289460330709245,
+                            "runtime_seconds": 0.12897801399230957
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 77.81414310501054,
+                            "runtime_seconds": 0.8009793758392334
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 4.439742048106101,
+                            "runtime_seconds": 0.32790207862854004
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 3.4643837807336277,
+                            "runtime_seconds": 0.27689170837402344
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.8332603337773689,
+                            "runtime_seconds": 0.08383703231811523
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.16591961575227093,
+                            "runtime_seconds": 0.0828542709350586
+                        }
+                    }
+                },
+                "0.20": {
+                    "_metadata": {
+                        "num_missing_timesteps": 165,
+                        "num_missing_rows": 16005
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 14.030026806891719,
+                            "runtime_seconds": 0.2852318286895752
+                        },
+                        "prediction_rmse": {
+                            "value": 1.6021333186685958,
+                            "runtime_seconds": 49.47141098976135
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 5.834009159022116,
+                            "runtime_seconds": 0.23888015747070312
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 2.981877287034479,
+                            "runtime_seconds": 0.23090696334838867
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 98.52743714846727,
+                            "runtime_seconds": 0.9966063499450684
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 45.21288183063028,
+                            "runtime_seconds": 0.4419291019439697
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 1.3019315596027408,
+                            "runtime_seconds": 0.12889623641967773
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 58.26582505575798,
+                            "runtime_seconds": 0.7262492179870605
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 5.346052631748931,
+                            "runtime_seconds": 0.25894594192504883
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 4.418145680313557,
+                            "runtime_seconds": 0.2569863796234131
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.6391842875981284,
+                            "runtime_seconds": 0.08336901664733887
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.11856760926800303,
+                            "runtime_seconds": 0.08424854278564453
+                        }
+                    }
+                }
+            }
+        },
+        "spline_3_by_zip": {
+            "random_timesteps": {
+                "0.10": {
+                    "_metadata": {
+                        "num_missing_timesteps": 98,
+                        "num_missing_rows": 9506
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 1.1815611971493536,
+                            "runtime_seconds": 0.30759263038635254
+                        },
+                        "prediction_rmse": {
+                            "value": 2.4275529057672083,
+                            "runtime_seconds": 51.28435516357422
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 1.2372220581012379,
+                            "runtime_seconds": 0.3090972900390625
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 1.2323278305042193,
+                            "runtime_seconds": 0.2774655818939209
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 2.814541134794524,
+                            "runtime_seconds": 1.4060564041137695
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 1.4964295500882576,
+                            "runtime_seconds": 0.5010428428649902
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 1.0569201469637295,
+                            "runtime_seconds": 0.1488206386566162
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 2.1045586598688035,
+                            "runtime_seconds": 1.0498602390289307
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 1.2541147069973624,
+                            "runtime_seconds": 0.42320704460144043
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 1.2252337347290354,
+                            "runtime_seconds": 0.3262979984283447
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.7374672742499396,
+                            "runtime_seconds": 0.09939074516296387
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.09685462462158474,
+                            "runtime_seconds": 0.09032535552978516
+                        }
+                    }
+                },
+                "0.20": {
+                    "_metadata": {
+                        "num_missing_timesteps": 196,
+                        "num_missing_rows": 19012
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 1.3987747118835596,
+                            "runtime_seconds": 0.32039642333984375
+                        },
+                        "prediction_rmse": {
+                            "value": 1.874028913257342,
+                            "runtime_seconds": 49.81868815422058
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 1.2359064791278598,
+                            "runtime_seconds": 0.2789890766143799
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 1.173036164586651,
+                            "runtime_seconds": 0.2870328426361084
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 2.5323466819009206,
+                            "runtime_seconds": 1.1918201446533203
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 1.4544265119211046,
+                            "runtime_seconds": 0.4607985019683838
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 1.0220156887354053,
+                            "runtime_seconds": 0.15328574180603027
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 1.92645824209327,
+                            "runtime_seconds": 0.884937047958374
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 1.4281944343897717,
+                            "runtime_seconds": 0.3375070095062256
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 1.3502250831849272,
+                            "runtime_seconds": 0.29910993576049805
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.6827525609650903,
+                            "runtime_seconds": 0.08666729927062988
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.07958718829412016,
+                            "runtime_seconds": 0.08880496025085449
+                        }
+                    }
+                }
+            },
+            "block_timesteps_24": {
+                "0.10": {
+                    "_metadata": {
+                        "num_missing_timesteps": 75,
+                        "num_missing_rows": 7275
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 5.683635323741096,
+                            "runtime_seconds": 0.33374786376953125
+                        },
+                        "prediction_rmse": {
+                            "value": 2.33936760650033,
+                            "runtime_seconds": 54.11762237548828
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 8.097036265259936,
+                            "runtime_seconds": 0.2897980213165283
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 8.375160723045292,
+                            "runtime_seconds": 0.26044440269470215
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 139.2421991857151,
+                            "runtime_seconds": 1.3982141017913818
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 31.967691627362647,
+                            "runtime_seconds": 0.48907041549682617
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 2.545038796589074,
+                            "runtime_seconds": 0.14840364456176758
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 66.15879967767138,
+                            "runtime_seconds": 0.7211794853210449
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 3.9463701475868174,
+                            "runtime_seconds": 0.3240671157836914
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 3.240329198985099,
+                            "runtime_seconds": 0.2924926280975342
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.8322638100230944,
+                            "runtime_seconds": 0.08746099472045898
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.13929047663223204,
+                            "runtime_seconds": 0.08727073669433594
+                        }
+                    }
+                },
+                "0.20": {
+                    "_metadata": {
+                        "num_missing_timesteps": 165,
+                        "num_missing_rows": 16005
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 10.189790108567111,
+                            "runtime_seconds": 0.2959156036376953
+                        },
+                        "prediction_rmse": {
+                            "value": 1.3359093236296542,
+                            "runtime_seconds": 49.40886187553406
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 4.483618434554191,
+                            "runtime_seconds": 0.2530391216278076
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 3.043483918966448,
+                            "runtime_seconds": 0.25396108627319336
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 64.10107737945935,
+                            "runtime_seconds": 1.0126121044158936
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 27.646432522945787,
+                            "runtime_seconds": 0.41461634635925293
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 1.1476012598424148,
+                            "runtime_seconds": 0.14740896224975586
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 51.21077578203655,
+                            "runtime_seconds": 0.7525625228881836
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 5.818070316336428,
+                            "runtime_seconds": 0.34035730361938477
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 4.563938770088062,
+                            "runtime_seconds": 0.29664134979248047
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.6359656031276414,
+                            "runtime_seconds": 0.08416032791137695
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.0846955489277007,
+                            "runtime_seconds": 0.08649897575378418
+                        }
+                    }
+                }
+            }
+        },
+        "spline_4_by_zip": {
+            "random_timesteps": {
+                "0.10": {
+                    "_metadata": {
+                        "num_missing_timesteps": 98,
+                        "num_missing_rows": 9506
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 1.14075930582157,
+                            "runtime_seconds": 0.3840911388397217
+                        },
+                        "prediction_rmse": {
+                            "value": 1.6652654097172883,
+                            "runtime_seconds": 51.25408053398132
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 1.2286791968558772,
+                            "runtime_seconds": 0.3608119487762451
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 1.117687996357865,
+                            "runtime_seconds": 0.34981536865234375
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 2.258471154297584,
+                            "runtime_seconds": 1.4310715198516846
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 1.3556865952093795,
+                            "runtime_seconds": 0.5399739742279053
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 1.0627798676190383,
+                            "runtime_seconds": 0.19683051109313965
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 1.7994339265607866,
+                            "runtime_seconds": 1.024825096130371
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 1.2533634138209981,
+                            "runtime_seconds": 0.43862056732177734
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 1.298038071636808,
+                            "runtime_seconds": 0.4139995574951172
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.7362131585438964,
+                            "runtime_seconds": 0.09413599967956543
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.09640391890818173,
+                            "runtime_seconds": 0.10762262344360352
+                        }
+                    }
+                },
+                "0.20": {
+                    "_metadata": {
+                        "num_missing_timesteps": 196,
+                        "num_missing_rows": 19012
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 1.331574876156302,
+                            "runtime_seconds": 0.4010930061340332
+                        },
+                        "prediction_rmse": {
+                            "value": 1.7844847325850437,
+                            "runtime_seconds": 49.67183184623718
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 1.243359833887078,
+                            "runtime_seconds": 0.35320353507995605
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 1.2644709558902443,
+                            "runtime_seconds": 0.29387879371643066
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 2.9663579208984476,
+                            "runtime_seconds": 1.3894550800323486
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 1.4666067951321924,
+                            "runtime_seconds": 0.48864006996154785
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 1.0145154173055322,
+                            "runtime_seconds": 0.16919970512390137
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 1.8815778269098091,
+                            "runtime_seconds": 0.8040740489959717
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 1.3595209431164796,
+                            "runtime_seconds": 0.38759875297546387
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 1.35467019044471,
+                            "runtime_seconds": 0.3529629707336426
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.6833469182961159,
+                            "runtime_seconds": 0.0891275405883789
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.07944567934173843,
+                            "runtime_seconds": 0.08965730667114258
+                        }
+                    }
+                }
+            },
+            "block_timesteps_24": {
+                "0.10": {
+                    "_metadata": {
+                        "num_missing_timesteps": 75,
+                        "num_missing_rows": 7275
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 5.560863714462404,
+                            "runtime_seconds": 0.3868753910064697
+                        },
+                        "prediction_rmse": {
+                            "value": 5.35057185783341,
+                            "runtime_seconds": 52.08972930908203
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 10.6604355781451,
+                            "runtime_seconds": 0.3490726947784424
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 9.813668566604607,
+                            "runtime_seconds": 0.30961036682128906
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 188.93468800908906,
+                            "runtime_seconds": 1.2583134174346924
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 35.91953968092613,
+                            "runtime_seconds": 0.46213388442993164
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 2.3079578413268007,
+                            "runtime_seconds": 0.16486763954162598
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 74.60295215054306,
+                            "runtime_seconds": 0.9194645881652832
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 4.714569900254264,
+                            "runtime_seconds": 0.31317877769470215
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 3.8893032836155874,
+                            "runtime_seconds": 0.3515501022338867
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.8877593647455594,
+                            "runtime_seconds": 0.08996224403381348
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.13973124542162377,
+                            "runtime_seconds": 0.08992123603820801
+                        }
+                    }
+                },
+                "0.20": {
+                    "_metadata": {
+                        "num_missing_timesteps": 165,
+                        "num_missing_rows": 16005
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 32.61666284567102,
+                            "runtime_seconds": 0.32308459281921387
+                        },
+                        "prediction_rmse": {
+                            "value": 3.596915851172714,
+                            "runtime_seconds": 49.43118596076965
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 6.166870829162471,
+                            "runtime_seconds": 0.3257880210876465
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 4.417814705718176,
+                            "runtime_seconds": 0.29671192169189453
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 146.20860498914908,
+                            "runtime_seconds": 1.172093391418457
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 82.99814971494317,
+                            "runtime_seconds": 0.4786221981048584
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 1.3577755196383008,
+                            "runtime_seconds": 0.15819406509399414
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 37.24709559841582,
+                            "runtime_seconds": 0.6812002658843994
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 10.446248817869797,
+                            "runtime_seconds": 0.3545713424682617
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 7.94807837405938,
+                            "runtime_seconds": 0.36164021492004395
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.6347412585855495,
+                            "runtime_seconds": 0.08584046363830566
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.08527312363092646,
+                            "runtime_seconds": 0.0889582633972168
+                        }
+                    }
+                }
+            }
+        },
+        "pchip_by_zip": {
+            "random_timesteps": {
+                "0.10": {
+                    "_metadata": {
+                        "num_missing_timesteps": 98,
+                        "num_missing_rows": 9506
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 0.5250660239858245,
+                            "runtime_seconds": 0.09717154502868652
+                        },
+                        "prediction_rmse": {
+                            "value": 2.317909844784594,
+                            "runtime_seconds": 51.52810335159302
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 0.6939970039640482,
+                            "runtime_seconds": 0.09511327743530273
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 0.5478851387090045,
+                            "runtime_seconds": 0.10322046279907227
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 3.3212772816863567,
+                            "runtime_seconds": 0.09543585777282715
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 0.7859070754221025,
+                            "runtime_seconds": 0.10237717628479004
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 0.10692508340396399,
+                            "runtime_seconds": 0.10170698165893555
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 1.6021493201518069,
+                            "runtime_seconds": 0.09662628173828125
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 0.2837958328232122,
+                            "runtime_seconds": 0.1251215934753418
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 0.33168420225036355,
+                            "runtime_seconds": 0.10145211219787598
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.18068072089865744,
+                            "runtime_seconds": 0.10590934753417969
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.012741532139283468,
+                            "runtime_seconds": 0.10778069496154785
+                        }
+                    }
+                },
+                "0.20": {
+                    "_metadata": {
+                        "num_missing_timesteps": 196,
+                        "num_missing_rows": 19012
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 0.7295409903924291,
+                            "runtime_seconds": 0.09830880165100098
+                        },
+                        "prediction_rmse": {
+                            "value": 2.0777017550219123,
+                            "runtime_seconds": 49.52578258514404
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 0.8067739287319472,
+                            "runtime_seconds": 0.09879112243652344
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 0.6857985725207797,
+                            "runtime_seconds": 0.10007095336914062
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 3.8569945144975324,
+                            "runtime_seconds": 0.14121198654174805
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 0.786280762134074,
+                            "runtime_seconds": 0.09637618064880371
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 0.1079874249619407,
+                            "runtime_seconds": 0.1003713607788086
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 1.6706080177115088,
+                            "runtime_seconds": 0.10242795944213867
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 0.45214936808131256,
+                            "runtime_seconds": 0.10389590263366699
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 0.441864795963769,
+                            "runtime_seconds": 0.10171055793762207
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.24024528560819747,
+                            "runtime_seconds": 0.09734392166137695
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.013811374201298953,
+                            "runtime_seconds": 0.09897232055664062
+                        }
+                    }
+                }
+            },
+            "block_timesteps_24": {
+                "0.10": {
+                    "_metadata": {
+                        "num_missing_timesteps": 75,
+                        "num_missing_rows": 7275
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 5.2560494650339695,
+                            "runtime_seconds": 0.09719228744506836
+                        },
+                        "prediction_rmse": {
+                            "value": 2.0402279339503444,
+                            "runtime_seconds": 54.248828411102295
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 7.931428947621324,
+                            "runtime_seconds": 0.09293460845947266
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 7.311370716424101,
+                            "runtime_seconds": 0.09415078163146973
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 111.82635685982167,
+                            "runtime_seconds": 0.11655139923095703
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 26.604785181437432,
+                            "runtime_seconds": 0.09992408752441406
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 1.734653726475791,
+                            "runtime_seconds": 0.09191751480102539
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 56.37915535166112,
+                            "runtime_seconds": 0.14070749282836914
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 3.7904734880730344,
+                            "runtime_seconds": 0.09551048278808594
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 2.8803089312471055,
+                            "runtime_seconds": 0.09879088401794434
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.759042146162714,
+                            "runtime_seconds": 0.09236264228820801
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.12328215856614352,
+                            "runtime_seconds": 0.09934782981872559
+                        }
+                    }
+                },
+                "0.20": {
+                    "_metadata": {
+                        "num_missing_timesteps": 165,
+                        "num_missing_rows": 16005
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 7.821773648656208,
+                            "runtime_seconds": 0.09550786018371582
+                        },
+                        "prediction_rmse": {
+                            "value": 1.6688394463300158,
+                            "runtime_seconds": 49.29180383682251
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 2.473553516400139,
+                            "runtime_seconds": 0.0970611572265625
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 2.033334761840354,
+                            "runtime_seconds": 0.09804892539978027
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 27.56358384755327,
+                            "runtime_seconds": 0.09750699996948242
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 10.11815305572006,
+                            "runtime_seconds": 0.10353565216064453
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 0.8498205198735033,
+                            "runtime_seconds": 0.0986626148223877
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 28.119581435285433,
+                            "runtime_seconds": 0.09798812866210938
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 4.042271065190382,
+                            "runtime_seconds": 0.09610390663146973
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 3.007322952263626,
+                            "runtime_seconds": 0.09599876403808594
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.3969836603631049,
+                            "runtime_seconds": 0.09786748886108398
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.06999535158606224,
+                            "runtime_seconds": 0.09508299827575684
+                        }
+                    }
+                }
+            }
+        },
+        "akima_by_zip": {
+            "random_timesteps": {
+                "0.10": {
+                    "_metadata": {
+                        "num_missing_timesteps": 98,
+                        "num_missing_rows": 9506
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 0.4062310621536543,
+                            "runtime_seconds": 0.09095191955566406
+                        },
+                        "prediction_rmse": {
+                            "value": 1.6213093643521506,
+                            "runtime_seconds": 52.38181185722351
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 0.6910850888452618,
+                            "runtime_seconds": 0.08857202529907227
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 0.5421210446748219,
+                            "runtime_seconds": 0.0890343189239502
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 3.5602938070894057,
+                            "runtime_seconds": 0.0869133472442627
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 0.8194280067125016,
+                            "runtime_seconds": 0.09719109535217285
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 0.09596496276072931,
+                            "runtime_seconds": 0.09004449844360352
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 1.623022803375806,
+                            "runtime_seconds": 0.09492182731628418
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 0.12866275131278723,
+                            "runtime_seconds": 0.10458111763000488
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 0.2351967073477045,
+                            "runtime_seconds": 0.09461283683776855
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.1467082530963493,
+                            "runtime_seconds": 0.09213495254516602
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.012885917188202778,
+                            "runtime_seconds": 0.1478888988494873
+                        }
+                    }
+                },
+                "0.20": {
+                    "_metadata": {
+                        "num_missing_timesteps": 196,
+                        "num_missing_rows": 19012
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 0.5170264985430815,
+                            "runtime_seconds": 0.09273242950439453
+                        },
+                        "prediction_rmse": {
+                            "value": 2.055222221658685,
+                            "runtime_seconds": 49.39200735092163
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 0.8017599824930192,
+                            "runtime_seconds": 0.1097419261932373
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 0.6887032676310736,
+                            "runtime_seconds": 0.08836030960083008
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 3.2509416805125677,
+                            "runtime_seconds": 0.09847617149353027
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 0.7719269583411915,
+                            "runtime_seconds": 0.09386992454528809
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 0.10385474811040814,
+                            "runtime_seconds": 0.09030675888061523
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 1.5188217106961333,
+                            "runtime_seconds": 0.09459137916564941
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 0.24029330834630597,
+                            "runtime_seconds": 0.09498858451843262
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 0.261890050008461,
+                            "runtime_seconds": 0.09671211242675781
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.2315307196516305,
+                            "runtime_seconds": 0.08966255187988281
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.014229279598939758,
+                            "runtime_seconds": 0.09392547607421875
+                        }
+                    }
+                }
+            },
+            "block_timesteps_24": {
+                "0.10": {
+                    "_metadata": {
+                        "num_missing_timesteps": 75,
+                        "num_missing_rows": 7275
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 4.709395847711267,
+                            "runtime_seconds": 0.09270739555358887
+                        },
+                        "prediction_rmse": {
+                            "value": 1.5881777705786015,
+                            "runtime_seconds": 54.97760796546936
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 7.821537814226048,
+                            "runtime_seconds": 0.08843493461608887
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 7.179257533327238,
+                            "runtime_seconds": 0.08967065811157227
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 124.8083702662589,
+                            "runtime_seconds": 0.09259963035583496
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 28.269875477519463,
+                            "runtime_seconds": 0.10000157356262207
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 1.8393141065045184,
+                            "runtime_seconds": 0.08869218826293945
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 60.087964962367806,
+                            "runtime_seconds": 0.08891677856445312
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 8.136207586792962,
+                            "runtime_seconds": 0.0929100513458252
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 3.7197688486296223,
+                            "runtime_seconds": 0.08711075782775879
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 1.3129658667487036,
+                            "runtime_seconds": 0.08849191665649414
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.12397591595049585,
+                            "runtime_seconds": 0.08911585807800293
+                        }
+                    }
+                },
+                "0.20": {
+                    "_metadata": {
+                        "num_missing_timesteps": 165,
+                        "num_missing_rows": 16005
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 8.193392837344334,
+                            "runtime_seconds": 0.08847475051879883
+                        },
+                        "prediction_rmse": {
+                            "value": 1.4564983913529868,
+                            "runtime_seconds": 49.298815965652466
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 2.9363324588655266,
+                            "runtime_seconds": 0.08934998512268066
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 2.5749638112698703,
+                            "runtime_seconds": 0.08943486213684082
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 34.29224950884431,
+                            "runtime_seconds": 0.08791565895080566
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 11.909262361861519,
+                            "runtime_seconds": 0.08922553062438965
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 0.9355724210558002,
+                            "runtime_seconds": 0.09775853157043457
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 26.65615678075268,
+                            "runtime_seconds": 0.09293460845947266
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 4.981580483519876,
+                            "runtime_seconds": 0.09508824348449707
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 3.0413673837373376,
+                            "runtime_seconds": 0.08754420280456543
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.3969836603631049,
+                            "runtime_seconds": 0.08741450309753418
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.08663213654869004,
+                            "runtime_seconds": 0.08776092529296875
+                        }
+                    }
+                }
+            }
+        },
+        "linear_by_zip": {
+            "random_timesteps": {
+                "0.10": {
+                    "_metadata": {
+                        "num_missing_timesteps": 98,
+                        "num_missing_rows": 9506
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 0.6739437123131836,
+                            "runtime_seconds": 0.06512665748596191
+                        },
+                        "prediction_rmse": {
+                            "value": 2.056710698105376,
+                            "runtime_seconds": 52.97829604148865
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 0.7332833333023699,
+                            "runtime_seconds": 0.06708884239196777
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 0.5967528468209318,
+                            "runtime_seconds": 0.06471943855285645
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 5.792241404509377,
+                            "runtime_seconds": 0.06631612777709961
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 1.0316340625332658,
+                            "runtime_seconds": 0.0728456974029541
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 0.12980198270435553,
+                            "runtime_seconds": 0.0659022331237793
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 2.227242616650156,
+                            "runtime_seconds": 0.07072591781616211
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 0.40239391956082143,
+                            "runtime_seconds": 0.07288265228271484
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 0.42845233031239083,
+                            "runtime_seconds": 0.09239363670349121
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.18411855509741343,
+                            "runtime_seconds": 0.06928014755249023
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.0140104285412137,
+                            "runtime_seconds": 0.07339596748352051
+                        }
+                    }
+                },
+                "0.20": {
+                    "_metadata": {
+                        "num_missing_timesteps": 196,
+                        "num_missing_rows": 19012
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 0.9696432520187461,
+                            "runtime_seconds": 0.07227206230163574
+                        },
+                        "prediction_rmse": {
+                            "value": 1.397786153143721,
+                            "runtime_seconds": 49.49891638755798
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 0.8605101842473171,
+                            "runtime_seconds": 0.07082962989807129
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 0.7526333046455355,
+                            "runtime_seconds": 0.06987690925598145
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 5.978886970947513,
+                            "runtime_seconds": 0.07154536247253418
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 1.0920047963197153,
+                            "runtime_seconds": 0.07031965255737305
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 0.12521125519934223,
+                            "runtime_seconds": 0.07191276550292969
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 2.3544374123993443,
+                            "runtime_seconds": 0.0716710090637207
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 0.5428288891037131,
+                            "runtime_seconds": 0.07039666175842285
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 0.5080853592518108,
+                            "runtime_seconds": 0.08037304878234863
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.24059652034490417,
+                            "runtime_seconds": 0.07132577896118164
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.014550359212834787,
+                            "runtime_seconds": 0.07033085823059082
+                        }
+                    }
+                }
+            },
+            "block_timesteps_24": {
+                "0.10": {
+                    "_metadata": {
+                        "num_missing_timesteps": 75,
+                        "num_missing_rows": 7275
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 5.644280544188938,
+                            "runtime_seconds": 0.06748151779174805
+                        },
+                        "prediction_rmse": {
+                            "value": 1.3181421835639053,
+                            "runtime_seconds": 51.33312177658081
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 7.840391591514835,
+                            "runtime_seconds": 0.06906771659851074
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 7.212250883263968,
+                            "runtime_seconds": 0.06693673133850098
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 107.64214205366238,
+                            "runtime_seconds": 0.0715780258178711
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 26.190995929837413,
+                            "runtime_seconds": 0.06871342658996582
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 1.7610779166667865,
+                            "runtime_seconds": 0.06563305854797363
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 55.05157880938555,
+                            "runtime_seconds": 0.06659817695617676
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 3.6463866360088066,
+                            "runtime_seconds": 0.07398533821105957
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 2.8776328053787625,
+                            "runtime_seconds": 0.06975817680358887
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.7294681016605223,
+                            "runtime_seconds": 0.06913137435913086
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.1291280996027593,
+                            "runtime_seconds": 0.06892871856689453
+                        }
+                    }
+                },
+                "0.20": {
+                    "_metadata": {
+                        "num_missing_timesteps": 165,
+                        "num_missing_rows": 16005
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 7.878187318796251,
+                            "runtime_seconds": 0.0652158260345459
+                        },
+                        "prediction_rmse": {
+                            "value": 1.3665864511049604,
+                            "runtime_seconds": 49.395599365234375
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 2.581756052354542,
+                            "runtime_seconds": 0.06989073753356934
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 2.1620025244479417,
+                            "runtime_seconds": 0.0680546760559082
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 27.07789830194164,
+                            "runtime_seconds": 0.06554961204528809
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 10.039738452005139,
+                            "runtime_seconds": 0.06491708755493164
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 0.8694053328285002,
+                            "runtime_seconds": 0.07070708274841309
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 27.26446071861494,
+                            "runtime_seconds": 0.06676697731018066
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 4.018878709988428,
+                            "runtime_seconds": 0.06939482688903809
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 2.942580698703925,
+                            "runtime_seconds": 0.0685276985168457
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.39726022025768926,
+                            "runtime_seconds": 0.06596803665161133
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.06348152063579818,
+                            "runtime_seconds": 0.06916666030883789
+                        }
+                    }
+                }
+            }
+        },
+        "local_newton_degree_2_by_zip": {
+            "random_timesteps": {
+                "0.10": {
+                    "_metadata": {
+                        "num_missing_timesteps": 98,
+                        "num_missing_rows": 9506
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 0.6610830326297107,
+                            "runtime_seconds": 0.7944390773773193
+                        },
+                        "prediction_rmse": {
+                            "value": 5.671496613733838,
+                            "runtime_seconds": 56.25226354598999
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 0.8547784371892707,
+                            "runtime_seconds": 0.7937514781951904
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 0.662282321160972,
+                            "runtime_seconds": 0.8185646533966064
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 4.5687269569798,
+                            "runtime_seconds": 0.8162121772766113
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 0.7954646826192981,
+                            "runtime_seconds": 0.9201915264129639
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 0.10707686289159955,
+                            "runtime_seconds": 1.1207222938537598
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 1.5758272884972941,
+                            "runtime_seconds": 0.9614825248718262
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 0.19922360230424638,
+                            "runtime_seconds": 0.8244445323944092
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 0.3157437893970601,
+                            "runtime_seconds": 0.989004373550415
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.18751534056046745,
+                            "runtime_seconds": 0.9521758556365967
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.01341307724694218,
+                            "runtime_seconds": 0.9289476871490479
+                        }
+                    }
+                },
+                "0.20": {
+                    "_metadata": {
+                        "num_missing_timesteps": 196,
+                        "num_missing_rows": 19012
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 0.6984162071317458,
+                            "runtime_seconds": 1.6217155456542969
+                        },
+                        "prediction_rmse": {
+                            "value": 2.0701856004293164,
+                            "runtime_seconds": 49.56654191017151
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 0.8990370435805228,
+                            "runtime_seconds": 1.5648221969604492
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 0.7468348656830035,
+                            "runtime_seconds": 1.5424747467041016
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 3.5076263566066026,
+                            "runtime_seconds": 1.6305277347564697
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 0.8240998077531848,
+                            "runtime_seconds": 1.5692195892333984
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 0.14437256838066534,
+                            "runtime_seconds": 1.6240992546081543
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 2.1888823331818896,
+                            "runtime_seconds": 1.6116063594818115
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 0.23519201984159216,
+                            "runtime_seconds": 1.563342571258545
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 0.28656226523758405,
+                            "runtime_seconds": 1.5369715690612793
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.2450364842641201,
+                            "runtime_seconds": 1.546504020690918
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.018933320146312067,
+                            "runtime_seconds": 1.6936371326446533
+                        }
+                    }
+                }
+            },
+            "block_timesteps_24": {
+                "0.10": {
+                    "_metadata": {
+                        "num_missing_timesteps": 75,
+                        "num_missing_rows": 7275
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 6.60686185686951,
+                            "runtime_seconds": 0.6697700023651123
+                        },
+                        "prediction_rmse": {
+                            "value": 7.743899414676984,
+                            "runtime_seconds": 50.780935287475586
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 56.6821967035354,
+                            "runtime_seconds": 0.650212287902832
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 51.618884522276716,
+                            "runtime_seconds": 0.6592633724212646
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 342.15903117463745,
+                            "runtime_seconds": 0.6881189346313477
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 80.71225815482025,
+                            "runtime_seconds": 0.6997642517089844
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 6.351340959445226,
+                            "runtime_seconds": 0.6579163074493408
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 179.24520180348486,
+                            "runtime_seconds": 0.6739084720611572
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 34.11180554034081,
+                            "runtime_seconds": 0.6598889827728271
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 31.753605589984616,
+                            "runtime_seconds": 0.6477260589599609
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 7.571802391120084,
+                            "runtime_seconds": 0.6441164016723633
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.9899174061012037,
+                            "runtime_seconds": 0.678208589553833
+                        }
+                    }
+                },
+                "0.20": {
+                    "_metadata": {
+                        "num_missing_timesteps": 165,
+                        "num_missing_rows": 16005
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 73.23538275064739,
+                            "runtime_seconds": 1.2965607643127441
+                        },
+                        "prediction_rmse": {
+                            "value": 15.479040191168156,
+                            "runtime_seconds": 49.60164737701416
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 110.48061257942442,
+                            "runtime_seconds": 1.2818400859832764
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 108.10759679101969,
+                            "runtime_seconds": 1.2700886726379395
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 319.36052289930933,
+                            "runtime_seconds": 1.2756626605987549
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 111.75010877773047,
+                            "runtime_seconds": 1.2794137001037598
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 7.802955560246448,
+                            "runtime_seconds": 1.3523190021514893
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 229.45447795813755,
+                            "runtime_seconds": 1.3003997802734375
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 7.533398036768078,
+                            "runtime_seconds": 1.35288405418396
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 8.983107739573954,
+                            "runtime_seconds": 1.2898454666137695
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 8.18246733319826,
+                            "runtime_seconds": 1.2966110706329346
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 2.5095607944620797,
+                            "runtime_seconds": 1.3252551555633545
+                        }
+                    }
+                }
+            }
+        },
+        "local_newton_degree_3_by_zip": {
+            "random_timesteps": {
+                "0.10": {
+                    "_metadata": {
+                        "num_missing_timesteps": 98,
+                        "num_missing_rows": 9506
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 0.45498691984713585,
+                            "runtime_seconds": 0.8407154083251953
+                        },
+                        "prediction_rmse": {
+                            "value": 1.9154822282120454,
+                            "runtime_seconds": 53.30496120452881
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 0.741096655314863,
+                            "runtime_seconds": 0.8540124893188477
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 0.5763164511017818,
+                            "runtime_seconds": 0.8406581878662109
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 2.5342795637359625,
+                            "runtime_seconds": 0.841745138168335
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 0.7290784178110455,
+                            "runtime_seconds": 0.9080343246459961
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 0.10266410166768226,
+                            "runtime_seconds": 1.4175152778625488
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 1.429698193342906,
+                            "runtime_seconds": 1.1463549137115479
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 0.0905830760106988,
+                            "runtime_seconds": 0.8824472427368164
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 0.23639970691304044,
+                            "runtime_seconds": 1.0685386657714844
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.17344844168646642,
+                            "runtime_seconds": 1.0686335563659668
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.01245710385199396,
+                            "runtime_seconds": 0.8960282802581787
+                        }
+                    }
+                },
+                "0.20": {
+                    "_metadata": {
+                        "num_missing_timesteps": 196,
+                        "num_missing_rows": 19012
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 0.6513236685947705,
+                            "runtime_seconds": 1.9437463283538818
+                        },
+                        "prediction_rmse": {
+                            "value": 1.3126894627315695,
+                            "runtime_seconds": 49.56473636627197
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 1.029094594638647,
+                            "runtime_seconds": 1.6863517761230469
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 0.8561479451627189,
+                            "runtime_seconds": 1.6187794208526611
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 2.7191532310649915,
+                            "runtime_seconds": 1.7769525051116943
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 0.9836695821265259,
+                            "runtime_seconds": 1.6322219371795654
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 0.13264162977953112,
+                            "runtime_seconds": 1.8132293224334717
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 2.0193381044467427,
+                            "runtime_seconds": 1.739398717880249
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 0.17447451380340934,
+                            "runtime_seconds": 1.9780685901641846
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 0.2278607316703716,
+                            "runtime_seconds": 1.6455357074737549
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.26266661692898247,
+                            "runtime_seconds": 1.6024141311645508
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.01828222454562945,
+                            "runtime_seconds": 1.732011079788208
+                        }
+                    }
+                }
+            },
+            "block_timesteps_24": {
+                "0.10": {
+                    "_metadata": {
+                        "num_missing_timesteps": 75,
+                        "num_missing_rows": 7275
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 120.04824910164088,
+                            "runtime_seconds": 0.7141826152801514
+                        },
+                        "prediction_rmse": {
+                            "value": 7.344324290867224,
+                            "runtime_seconds": 49.93514585494995
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 485.4538922660696,
+                            "runtime_seconds": 0.6714382171630859
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 416.6139922712445,
+                            "runtime_seconds": 0.6686725616455078
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 948.478530148248,
+                            "runtime_seconds": 0.7091498374938965
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 489.24934280247356,
+                            "runtime_seconds": 0.686121940612793
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 30.411138385830014,
+                            "runtime_seconds": 0.6647236347198486
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 945.342907138393,
+                            "runtime_seconds": 0.6866426467895508
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 52.64449001005917,
+                            "runtime_seconds": 0.7088718414306641
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 59.71065177262362,
+                            "runtime_seconds": 0.6658642292022705
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 30.69055958545016,
+                            "runtime_seconds": 0.703589677810669
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 5.880729932919725,
+                            "runtime_seconds": 0.6910600662231445
+                        }
+                    }
+                },
+                "0.20": {
+                    "_metadata": {
+                        "num_missing_timesteps": 165,
+                        "num_missing_rows": 16005
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 783.5805368227088,
+                            "runtime_seconds": 1.3519389629364014
+                        },
+                        "prediction_rmse": {
+                            "value": 83.8905099155332,
+                            "runtime_seconds": 49.74225664138794
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 830.0720698825232,
+                            "runtime_seconds": 1.3278930187225342
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 810.6253560087528,
+                            "runtime_seconds": 1.3358314037322998
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 3374.5948539538385,
+                            "runtime_seconds": 1.319486379623413
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 1874.2900112671816,
+                            "runtime_seconds": 1.3374521732330322
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 89.8302305323489,
+                            "runtime_seconds": 1.3956849575042725
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 3009.930302204296,
+                            "runtime_seconds": 1.410794973373413
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 47.671045723498494,
+                            "runtime_seconds": 1.3692653179168701
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 46.66050736949953,
+                            "runtime_seconds": 1.3536531925201416
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 34.52746306643414,
+                            "runtime_seconds": 1.3544881343841553
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 40.60647274910036,
+                            "runtime_seconds": 1.3280162811279297
+                        }
+                    }
+                }
+            }
+        },
+        "local_newton_degree_4_by_zip": {
+            "random_timesteps": {
+                "0.10": {
+                    "_metadata": {
+                        "num_missing_timesteps": 98,
+                        "num_missing_rows": 9506
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 0.4938920120948067,
+                            "runtime_seconds": 0.8589274883270264
+                        },
+                        "prediction_rmse": {
+                            "value": 1.3646253516667375,
+                            "runtime_seconds": 52.056154012680054
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 0.9614638094756132,
+                            "runtime_seconds": 0.9097833633422852
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 0.7527988141788181,
+                            "runtime_seconds": 0.8705604076385498
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 1.8886149932891465,
+                            "runtime_seconds": 0.8888118267059326
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 0.9485324105686412,
+                            "runtime_seconds": 0.9219260215759277
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 0.13782333863307292,
+                            "runtime_seconds": 1.144049882888794
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 1.7278800388398512,
+                            "runtime_seconds": 1.0252337455749512
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 0.04312989511539658,
+                            "runtime_seconds": 1.1301860809326172
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 0.19766684519140892,
+                            "runtime_seconds": 1.1145691871643066
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.18757355076445623,
+                            "runtime_seconds": 0.948408842086792
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.014212136514086924,
+                            "runtime_seconds": 1.0121517181396484
+                        }
+                    }
+                },
+                "0.20": {
+                    "_metadata": {
+                        "num_missing_timesteps": 196,
+                        "num_missing_rows": 19012
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 0.7619637091690936,
+                            "runtime_seconds": 1.8810081481933594
+                        },
+                        "prediction_rmse": {
+                            "value": 1.3588334744736812,
+                            "runtime_seconds": 49.41594886779785
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 1.0422534771953467,
+                            "runtime_seconds": 1.7223267555236816
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 0.8760022102102472,
+                            "runtime_seconds": 1.68837308883667
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 2.161018510073516,
+                            "runtime_seconds": 1.8385016918182373
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 1.0937030100473415,
+                            "runtime_seconds": 1.9282267093658447
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 0.14534777133356366,
+                            "runtime_seconds": 1.703087568283081
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 2.261320695505845,
+                            "runtime_seconds": 1.7365448474884033
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 0.09224055699675134,
+                            "runtime_seconds": 1.8007116317749023
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 0.24271313102835815,
+                            "runtime_seconds": 1.6563162803649902
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.2961765108080313,
+                            "runtime_seconds": 1.6607153415679932
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.017738997449144867,
+                            "runtime_seconds": 1.7238848209381104
+                        }
+                    }
+                }
+            },
+            "block_timesteps_24": {
+                "0.10": {
+                    "_metadata": {
+                        "num_missing_timesteps": 75,
+                        "num_missing_rows": 7275
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 894.302244611716,
+                            "runtime_seconds": 0.7121584415435791
+                        },
+                        "prediction_rmse": {
+                            "value": 9.795247839988317,
+                            "runtime_seconds": 51.625622510910034
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 2930.0336988080608,
+                            "runtime_seconds": 0.7016069889068604
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 2574.3206803812986,
+                            "runtime_seconds": 0.7492709159851074
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 5654.902845685967,
+                            "runtime_seconds": 0.8132367134094238
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 2694.785716097434,
+                            "runtime_seconds": 0.7034029960632324
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 376.50885414559707,
+                            "runtime_seconds": 0.6937518119812012
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 6565.106433158055,
+                            "runtime_seconds": 0.7230219841003418
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 215.13994644335577,
+                            "runtime_seconds": 0.7143001556396484
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 282.07811681570945,
+                            "runtime_seconds": 0.7066385746002197
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 168.24595931439575,
+                            "runtime_seconds": 0.7673406600952148
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 27.933723368162646,
+                            "runtime_seconds": 0.7196667194366455
+                        }
+                    }
+                },
+                "0.20": {
+                    "_metadata": {
+                        "num_missing_timesteps": 165,
+                        "num_missing_rows": 16005
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 8673.656563350025,
+                            "runtime_seconds": 1.3982443809509277
+                        },
+                        "prediction_rmse": {
+                            "value": 336.1496507126344,
+                            "runtime_seconds": 49.65971779823303
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 4243.633463726956,
+                            "runtime_seconds": 1.3789784908294678
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 3732.5150277848206,
+                            "runtime_seconds": 1.4046201705932617
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 11406.589339161883,
+                            "runtime_seconds": 1.4292054176330566
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 5553.243265213821,
+                            "runtime_seconds": 1.56380033493042
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 343.8826851099289,
+                            "runtime_seconds": 1.394653558731079
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 11049.250961206377,
+                            "runtime_seconds": 1.504004716873169
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 71.38353794726787,
+                            "runtime_seconds": 1.4399268627166748
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 206.51445903588998,
+                            "runtime_seconds": 1.3952488899230957
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 86.59542806231329,
+                            "runtime_seconds": 1.4141099452972412
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 340.2041069007298,
+                            "runtime_seconds": 1.4104602336883545
+                        }
+                    }
+                }
+            }
+        },
+        "local_newton_degree_10_by_zip": {
+            "random_timesteps": {
+                "0.10": {
+                    "_metadata": {
+                        "num_missing_timesteps": 98,
+                        "num_missing_rows": 9506
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 0.5663772964860666,
+                            "runtime_seconds": 1.0791997909545898
+                        },
+                        "prediction_rmse": {
+                            "value": 1.5298830838942064,
+                            "runtime_seconds": 53.365400075912476
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 1.1474753005967717,
+                            "runtime_seconds": 1.136873483657837
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 0.9143158968818347,
+                            "runtime_seconds": 1.0874865055084229
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 1.150572484204125,
+                            "runtime_seconds": 1.07352614402771
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 0.8900955476557488,
+                            "runtime_seconds": 1.1577298641204834
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 0.16022394109183127,
+                            "runtime_seconds": 1.807631015777588
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 1.971030202029312,
+                            "runtime_seconds": 1.2165935039520264
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 0.026451320162883603,
+                            "runtime_seconds": 1.186091661453247
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 0.28084452594997983,
+                            "runtime_seconds": 1.154435634613037
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.2521444343804114,
+                            "runtime_seconds": 1.1507833003997803
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.01820716755564108,
+                            "runtime_seconds": 1.1435613632202148
+                        }
+                    }
+                },
+                "0.20": {
+                    "_metadata": {
+                        "num_missing_timesteps": 196,
+                        "num_missing_rows": 19012
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 0.8731771826995953,
+                            "runtime_seconds": 2.0666844844818115
+                        },
+                        "prediction_rmse": {
+                            "value": 2.6350647402016185,
+                            "runtime_seconds": 51.530991077423096
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 2.1767059949791907,
+                            "runtime_seconds": 2.1029958724975586
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 1.8616320329651206,
+                            "runtime_seconds": 2.0728838443756104
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 2.005719534253299,
+                            "runtime_seconds": 2.131009817123413
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 1.85278403338587,
+                            "runtime_seconds": 2.147423505783081
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 0.3035142137477172,
+                            "runtime_seconds": 2.0844719409942627
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 3.716447286820922,
+                            "runtime_seconds": 2.1136276721954346
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 0.0569074298068715,
+                            "runtime_seconds": 2.093851327896118
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 0.3767429023597553,
+                            "runtime_seconds": 2.071920871734619
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 0.38606337729335927,
+                            "runtime_seconds": 2.0562803745269775
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 0.048935593641758174,
+                            "runtime_seconds": 2.1626980304718018
+                        }
+                    }
+                }
+            },
+            "block_timesteps_24": {
+                "0.10": {
+                    "_metadata": {
+                        "num_missing_timesteps": 75,
+                        "num_missing_rows": 7275
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 482093.00572150556,
+                            "runtime_seconds": 0.8477561473846436
+                        },
+                        "prediction_rmse": {
+                            "value": 45.14426439504477,
+                            "runtime_seconds": 50.973777770996094
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 3844809.5381928235,
+                            "runtime_seconds": 0.8587329387664795
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 3647623.9930058196,
+                            "runtime_seconds": 0.8874156475067139
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 1127133.3578087224,
+                            "runtime_seconds": 0.9588119983673096
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 3894748.4548644586,
+                            "runtime_seconds": 0.8526036739349365
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 637001.3356165185,
+                            "runtime_seconds": 0.8753893375396729
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 3925589.9554674705,
+                            "runtime_seconds": 0.9046170711517334
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 41748.69108332409,
+                            "runtime_seconds": 0.884490966796875
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 51040.62318565987,
+                            "runtime_seconds": 0.8637509346008301
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 88586.62228295465,
+                            "runtime_seconds": 0.8781614303588867
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 43460.82340753221,
+                            "runtime_seconds": 0.8670608997344971
+                        }
+                    }
+                },
+                "0.20": {
+                    "_metadata": {
+                        "num_missing_timesteps": 165,
+                        "num_missing_rows": 16005
+                    },
+                    "us_aqi": {
+                        "interpolation_rmse": {
+                            "value": 83032737.73144412,
+                            "runtime_seconds": 1.7506945133209229
+                        },
+                        "prediction_rmse": {
+                            "value": 99938.24846080774,
+                            "runtime_seconds": 49.26810336112976
+                        }
+                    },
+                    "pm10": {
+                        "interpolation_rmse": {
+                            "value": 734156797.7134876,
+                            "runtime_seconds": 1.7165567874908447
+                        }
+                    },
+                    "pm2_5": {
+                        "interpolation_rmse": {
+                            "value": 724653995.406377,
+                            "runtime_seconds": 1.7224397659301758
+                        }
+                    },
+                    "carbon_monoxide": {
+                        "interpolation_rmse": {
+                            "value": 169772413.33168736,
+                            "runtime_seconds": 1.7343862056732178
+                        }
+                    },
+                    "nitrogen_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 179685107.3836026,
+                            "runtime_seconds": 1.8078289031982422
+                        }
+                    },
+                    "sulphur_dioxide": {
+                        "interpolation_rmse": {
+                            "value": 23531830.68972758,
+                            "runtime_seconds": 1.7245912551879883
+                        }
+                    },
+                    "ozone": {
+                        "interpolation_rmse": {
+                            "value": 209756880.22009632,
+                            "runtime_seconds": 1.7387008666992188
+                        }
+                    },
+                    "uv_index_clear_sky": {
+                        "interpolation_rmse": {
+                            "value": 2689521.369436604,
+                            "runtime_seconds": 1.7707529067993164
+                        }
+                    },
+                    "uv_index": {
+                        "interpolation_rmse": {
+                            "value": 3003741.4524549586,
+                            "runtime_seconds": 1.7315421104431152
+                        }
+                    },
+                    "dust": {
+                        "interpolation_rmse": {
+                            "value": 133908207.79046427,
+                            "runtime_seconds": 1.767477035522461
+                        }
+                    },
+                    "aerosol_optical_depth": {
+                        "interpolation_rmse": {
+                            "value": 11305407.458065681,
+                            "runtime_seconds": 1.7600736618041992
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
