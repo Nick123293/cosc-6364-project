@@ -2,6 +2,8 @@
 
 This file explains how to configure and run `project.py`.
 
+**Note: This code can take a very long time to run if you choose all interpolation features, percentages, and interpolation_methods we have in the file. Our final run to get all of our data took around 2 hours.**
+
 ## 1. Global Configuration Variables
 
 The main inputs to the script are defined as global variables near the top of `project.py`, around lines 24–69.
