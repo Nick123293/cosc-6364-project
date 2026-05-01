@@ -4,6 +4,24 @@ This file explains how to configure and run `project.py`.
 
 **Note: This code can take a very long time to run if you choose all interpolation features, percentages, and interpolation_methods we have in the file. Our final run to get all of our data took around 2 hours.**
 
+## Python Libraries Required:
+
+1: pandas
+
+2: numpy
+
+3: scikit-learn
+
+4: tensorflow
+
+5: keras
+
+6: geopandas
+
+7: shapely
+
+8: scipy
+
 ## 1. Global Configuration Variables
 
 The main inputs to the script are defined as global variables near the top of `project.py`, around lines 24–69.
@@ -12,16 +30,16 @@ You can change the following values:
 
 | Variable | Approx. Line | Description |
 |---|---:|---|
-| `GLOBAL_SEED` | 24 | Sets the random seed for reproducibility. |
-| `dataset_file_path` | 34 | File path to the input dataset. |
-| `percentages_to_test` | 36 | Missing-data percentages to test. |
-| `block_size` | 38 | Block size for block-based data removal. |
-| `target_col` | 40 | Prediction target for the neural network. |
-| `interpolation_features` | 42–54 | Features that will be interpolated. |
-| `window_size` | 58 | Window size used by the LSTM. |
-| `train_fraction` | 59 | Train/test split used for the LSTM. |
-| `num_training_rounds` | 60 | Number of epochs used to train the neural network. |
-| `log_file_path` | 67 | Output file path for the experiment log. |
+| `GLOBAL_SEED` | 41 | Sets the random seed for reproducibility. |
+| `dataset_file_path` | 51 | File path to the input dataset. |
+| `percentages_to_test` | 53 | Missing-data percentages to test. |
+| `block_size` | 55 | Block size for block-based data removal. |
+| `target_col` | 57 | Prediction target for the neural network. |
+| `interpolation_features` | 59–71 | Features that will be interpolated. |
+| `window_size` | 75 | Window size used by the LSTM. |
+| `train_fraction` | 76 | Train/test split used for the LSTM. |
+| `num_training_rounds` | 77 | Number of epochs used to train the neural network. |
+| `log_file_path` | 84 | Output file path for the experiment log. |
 
 ## 2. Required Shape Data for Spatial Interpolation
 
@@ -37,7 +55,7 @@ These files are used by the GeoPandas-based spatial interpolation methods.
 
 The main variable that determines which interpolation methods are tested is `INTERPOLATION_METHODS`.
 
-This variable is located around lines 422–511.
+This variable is located around lines 449–538.
 
 `INTERPOLATION_METHODS` is a list of dictionaries. Each dictionary describes one interpolation method that the script should test.
 
